@@ -1,0 +1,27 @@
+{
+  "apiKey": {
+	"label": "API Key",
+	"type": "Password",
+	"required": true,
+	"help": "Microsoft Project Oxford Face API key."
+  },
+  "faceAttributes": {
+	"label": "Face Attributes",
+	"type": "Array",
+	"enum": ["age", "facialHair", "gender", "headPose", "smile"],
+	"default": "age,gender",
+	"help": "(Optional) Analyze and return the one or more specified face attributes in the comma-separated string like 'age, gender'. Supported face attributes include age, facialHair, gender, headPose, and smile. Note that each face attribute analysis has additional computational and time cost. Default: age, gender"
+  },
+  "includeFaceId": {
+	"label": "Include Face ID",
+	"type": "Boolean",
+	"default": true,
+	"help": "(Optional) Get Face IDs of the detected faces or not. The default value is true."
+  },
+  "includeFaceLandmarks": {
+	"label": "Include Face Landmarks",
+	"type": "Boolean",
+	"default": false,
+	"help": "(Optional) Get Face Landmarks of the detected faces or not. The default value is false."
+  }
+}
